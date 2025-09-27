@@ -280,7 +280,7 @@ footer {
 /* Small phones */
 @media (max-width: 480px) {
   .hero h1 {
-    font-size: 1.5rem;  /* force smaller title */
+    font-size: 1.8rem;  /* force smaller title */
     line-height: 1.2;
     word-break: break-word; /* ensures clean wrapping */
   }
@@ -288,4 +288,7 @@ footer {
     font-size: 0.85rem;
   }
 }
+
+
+
 
