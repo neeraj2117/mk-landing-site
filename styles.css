@@ -151,24 +151,50 @@ body {
 .btn-download {
   display: inline-block;
   padding: 13px 35px;
-  background: gold;         /* Yellow background */
-  color: black;             /* White text */
+  background: gold;         
+  color: black;             
   font-weight: 700;
   border-radius: 8px;
-  border: 2px solid gold;   /* Gold border */
+  border: 2px solid gold;   
   text-decoration: none;
   font-size: 1.5rem;
   position: relative;
   box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
-  animation: glowingBorder 2s infinite alternate; /* Glow effect */
+  animation: pulseGlow 2s infinite, bounce 3s infinite; /* New animations */
   transition: transform 0.3s;
 }
 
+/* Hover effect */
 .btn-download:hover {
-  transform: scale(1.05);
-  background: #ffd700; /* Brighter gold */
-  box-shadow: 0 0 25px rgba(255, 215, 0, 1);
+  transform: scale(1.1) rotate(-1deg);
+  background: #ffd700; 
+  box-shadow: 0 0 35px rgba(255, 215, 0, 1);
 }
+
+/* Glow + pulse */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6), 0 0 20px rgba(255, 215, 0, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255, 215, 0, 1), 0 0 45px rgba(255, 215, 0, 0.9);
+    transform: scale(1.05);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6), 0 0 20px rgba(255, 215, 0, 0.4);
+  }
+}
+
+/* Gentle bounce */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
 
 /* Glow animation */
 @keyframes glowingBorder {
