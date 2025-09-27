@@ -292,7 +292,7 @@ footer {
 }
 
 /* Small phones */
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   .hero h1 {
     font-size: 2rem;
     line-height: 1.25;
@@ -302,7 +302,7 @@ footer {
     font-size: 1rem;
   }
   .btn-download {
-    font-size: .8rem;
+    font-size: 1.7rem;
     padding: 22px 35px;
   }
 }
