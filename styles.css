@@ -107,14 +107,14 @@ body {
 ========================= */
 .btn-download {
   display: inline-block;
-  padding: 14px 40px;
+  padding: 18px 40px;
   background: gold;
   color: black;
   font-weight: 700;
   border-radius: 8px;
   border: none;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   position: relative;
   overflow: hidden;
   animation: pulseBorder 1.5s infinite ease-in-out;
