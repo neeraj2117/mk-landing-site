@@ -277,7 +277,7 @@ footer {
 }
 
 /* Extra small phones */
-@media (max-width: 480px) {
+@media (max-width: 450px) {
   .hero h1 {
     font-size: 1.8rem;   /* even smaller */
     line-height: 1.2;
