@@ -158,12 +158,12 @@ body {
 
 .btn-download {
   display: inline-block;
-  padding: 15px 40px;
+  padding: 13px 35px;
   background: gold;         /* Yellow background */
   color: black;             /* White text */
   font-weight: 700;
   border-radius: 8px;
-  border: 2px solid gold;   /* Gold border */
+  border: 2px solid gold;   /* Gold    border */
   text-decoration: none;
   font-size: 1.5rem;
   position: relative;
@@ -283,7 +283,7 @@ footer {
 /* Small phones */
 @media (max-width: 480px) {
   .hero h1 {
-    font-size: 2.3rem;   /* slightly bigger than before */
+    font-size: 2.5rem;   /* slightly bigger than before */
     line-height: 1.25;
     word-break: break-word;
   }
