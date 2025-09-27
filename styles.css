@@ -56,7 +56,7 @@ body {
   box-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
 }
 
-/* Default logo size */
+/* Logo */
 .logo {
   font-size: 3rem;
   font-weight: 700;
@@ -126,7 +126,6 @@ body {
   border: 2px solid gold;
   z-index: 2;
   box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
-  animation: glowingBorder 2s infinite alternate;
 }
 
 .hero h1 {
@@ -159,29 +158,10 @@ body {
   text-decoration: none;
   font-size: 1.5rem;
   position: relative;
-  box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
-  animation: pulseGlow 2s infinite, bounce 3s infinite; /* New animations */
-  transition: transform 0.3s;
-}
-
-/* Hover effect */
-/* Download Button */
-.btn-download {
-  display: inline-block;
-  padding: 13px 35px;
-  background: gold;         
-  color: black;             
-  font-weight: 700;
-  border-radius: 8px;
-  border: 2px solid gold;   
-  text-decoration: none;
-  font-size: 1.5rem;
-  position: relative;
   overflow: hidden; /* Needed for shimmer */
   transition: transform 0.3s;
 }
 
-/* Hover effect */
 .btn-download:hover {
   transform: scale(1.05);
   background: #ffd700; 
@@ -193,39 +173,29 @@ body {
   content: "";
   position: absolute;
   top: 0;
-  left: -75%;
-  width: 50%;
+  left: -150%;
+  width: 100%;
   height: 100%;
   background: linear-gradient(
     120deg,
     rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0.7) 50%,
     rgba(255, 255, 255, 0) 100%
   );
   transform: skewX(-25deg);
-  animation: shimmer 2.5s infinite;
+  animation: shimmer 1.5s infinite;
+  z-index: 1;
 }
 
-/* Keyframes for shimmer */
+/* Keep button text visible */
+.btn-download span {
+  position: relative;
+  z-index: 2;
+}
+
 @keyframes shimmer {
-  0% {
-    left: -75%;
-  }
-  100% {
-    left: 125%;
-  }
-}
-
-
-
-/* Glow animation */
-@keyframes glowingBorder {
-  0% {
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6), 0 0 20px rgba(255, 215, 0, 0.4);
-  }
-  100% {
-    box-shadow: 0 0 25px rgba(255, 215, 0, 1), 0 0 45px rgba(255, 215, 0, 0.8);
-  }
+  0% { left: -150%; }
+  100% { left: 150%; }
 }
 
 /* Features */
