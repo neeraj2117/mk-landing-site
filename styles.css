@@ -292,7 +292,7 @@ footer {
 }
 
 /* Small phones */
-@media (max-width: 520px) {
+@media (max-width: 450px) {
   .hero h1 {
     font-size: 2rem;
     line-height: 1.25;
