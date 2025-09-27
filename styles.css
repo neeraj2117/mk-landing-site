@@ -129,15 +129,6 @@ body {
   animation: glowingBorder 2s infinite alternate;
 }
 
-@keyframes glowingBorder {
-  0% {
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6), 0 0 20px rgba(255, 215, 0, 0.4);
-  }
-  100% {
-    box-shadow: 0 0 25px rgba(255, 215, 0, 1), 0 0 45px rgba(255, 215, 0, 0.8);
-  }
-}
-
 .hero h1 {
   font-size: 4rem;
   font-weight: 700;
@@ -156,6 +147,7 @@ body {
   color: #ddd;
 }
 
+/* Download Button */
 .btn-download {
   display: inline-block;
   padding: 13px 35px;
@@ -163,7 +155,7 @@ body {
   color: black;             /* White text */
   font-weight: 700;
   border-radius: 8px;
-  border: 2px solid gold;   /* Gold    border */
+  border: 2px solid gold;   /* Gold border */
   text-decoration: none;
   font-size: 1.5rem;
   position: relative;
@@ -174,10 +166,11 @@ body {
 
 .btn-download:hover {
   transform: scale(1.05);
-  background: #ffd700; /* Slightly brighter gold */
+  background: #ffd700; /* Brighter gold */
   box-shadow: 0 0 25px rgba(255, 215, 0, 1);
 }
 
+/* Glow animation */
 @keyframes glowingBorder {
   0% {
     box-shadow: 0 0 10px rgba(255, 215, 0, 0.6), 0 0 20px rgba(255, 215, 0, 0.4);
@@ -186,7 +179,6 @@ body {
     box-shadow: 0 0 25px rgba(255, 215, 0, 1), 0 0 45px rgba(255, 215, 0, 0.8);
   }
 }
-
 
 /* Features */
 .features {
@@ -266,31 +258,33 @@ footer {
   border-top: 1px solid #333;
 }
 
-
-
-
+/* Tablet screens */
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 1.3;
   }
   .hero p {
-    font-size: 1rem;
+    font-size: 1.2rem;
+  }
+  .btn-download {
+    font-size: 1.2rem;
+    padding: 12px 28px;
   }
 }
 
 /* Small phones */
 @media (max-width: 480px) {
   .hero h1 {
-    font-size: 2.7rem;   
+    font-size: 2rem;
     line-height: 1.25;
     word-break: break-word;
   }
   .hero p {
     font-size: 1rem;
   }
+  .btn-download {
+    font-size: 1rem;
+    padding: 10px 22px;
+  }
 }
-
-
-
-
