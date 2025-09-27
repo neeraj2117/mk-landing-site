@@ -269,21 +269,23 @@ footer {
 /* Responsive hero text for tablets */
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 2.5rem;   /* smaller than desktop */
+    font-size: 2.2rem;
+    line-height: 1.3;
   }
   .hero p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
-/* Extra small phones */
-@media (max-width: 450px) {
+/* Small phones */
+@media (max-width: 480px) {
   .hero h1 {
-    font-size: 1.5rem;   /* even smaller */
+    font-size: 1.5rem;  /* force smaller title */
     line-height: 1.2;
+    word-break: break-word; /* ensures clean wrapping */
   }
   .hero p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 }
 
